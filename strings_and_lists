@@ -1,0 +1,130 @@
+2.
+s=input('Enter srting:')
+print('Number of replacements:', s.count(':'))
+print(s.replace(':','%'))
+
+3.
+s=input('Enter string:')
+print('Characters removed:', s.count('.'))
+print(s.replace('.',' '))
+
+4.
+s=input('Enter string:')
+print('Number of replacments:', s.count('a'))
+print(s.replace('a','o'))
+print('Number of characters:', len(s))
+
+s=input('Enter a string:')
+print(s.lower())
+
+6.
+s=input('Enter string:')
+print('Number of charecters removed', s.count('a'))
+print(s.replace('a',' '))
+
+7.
+s=input('Enter string:')
+n=len(s)
+s = s[:n // 2].replace('n', '*') + s[n // 2:]
+print(s)
+
+8.
+s=input('Enter string:')
+print('Number of words:', len(s.split()))
+
+9.
+s=input('Enter string:')
+n=input('Given word:')
+print(s.count(n))
+
+10.
+s=input('Enter string:')
+print(s.title())
+
+12.
+s = str(input('Enter string:'))
+news = ''
+for i in s.split():
+    if i.endswith('i'):
+        print(i, " ")
+
+13.
+s=str(input('Enter string:'))
+news = ''
+for i in s.split():
+    if i.endswith('i'):
+        print(i, " ")
+
+
+for h in s.split():
+    if h.startswith('a'):
+        print(h, " ")
+
+14.
+s=str(input('Enter string:'))
+news = ''
+for i in s.split():
+    if i.endswith('i'):
+        print(i, " ")
+
+
+for h in s.split():
+    if h.startswith('a'):
+        print(h, " ")
+
+15.
+s=str(input('Enter string:'))
+count = 0
+for i in s:
+    if i == 't' or i =="T":
+        count += 1
+print(count)
+
+                           Independent work
+1.
+s=input('Enter a string:')
+print (s[::-1])
+
+2.
+a=[]
+n= int(input("Enter the number of elements in list:"))
+for x in range(0,n):
+    element=int(input("Enter element" + str(x+1) + ":"))
+    a.append(element)
+temp=a[0]
+a[0]=a[n-1]
+a[n-1]=temp
+print("New list is:")
+print(a)
+
+3.
+a=[]
+n= int(input("Enter the number of elements in list:"))
+for x in range(0,n):
+    element=input("Enter parameter " + str(x+1) + ":")
+    a.append(element)
+temp=a[0]
+print("New list is:")
+print(a)
+
+4.
+a=[]
+n= int(input("Enter the number of elements in list:"))
+for x in range(0,n):
+    element=int(input("Enter element " + str(x+1) + ":"))
+    a.append(element)
+temp=a[0]
+a.sort()
+print ("Largest element is:", a[-1])
+b=int(a[-1]/n)
+print (b)
+
+5.
+a=[]
+n= int(input("Enter the number of elements in list:"))
+for x in range(0,n):
+    element=int(input("Enter element" + str(x+1) + ":"))
+    a.append(element)
+temp=a[0]
+a.sort(reverse = True)
+print(a)
